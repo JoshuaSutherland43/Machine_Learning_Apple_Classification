@@ -12,7 +12,7 @@ import numpy as np
 import os
 import pandas as pd 
 
-file_path = 'C:/Users/lab_services_student/Downloads/Apple_classifaction/data/Detect-RG.xlsx'
+file_path = 'C:/Users/joshu/OneDrive/Desktop/ApplesML/data/Detect-RG.xlsx'
 df = pd.read_excel(file_path) 
 
 print(f"Successfully loaded data from: {file_path}") 
@@ -74,9 +74,10 @@ Y = df['Condition']
 
 
 # ___Cell no. 10___
+np.random.seed(42)
 n = 50
-randIx  = np.random.choice(len(df), n, replace=False)
-randIx 
+randIx = np.random.choice(len(df), n, replace=False)
+ 
 
 
 
