@@ -13,7 +13,7 @@ import numpy as np # For handling N-DIMENSIONAL ARRAYS
 import os
 import pandas as pd 
 
-file_path = 'C:/Users/joshu/OneDrive/Desktop/ApplesML/data/Detect-GD.xlsx'
+file_path = 'C:/Users/lab_services_student/Downloads/Apple_classifaction/data/Detect-GD.xlsx'
 df = pd.read_excel(file_path) 
 
 print(f"Successfully loaded data from: {file_path}") 
