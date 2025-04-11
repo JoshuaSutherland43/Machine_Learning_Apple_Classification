@@ -43,7 +43,7 @@ def creat_rollingData3(df, window_arr = [2, 3], method = skew_df, ax = 1):
         else:
             df_tmp = df_tmp.rolling(w).apply(lambda x: method(x))
         
-        df_tmp = df_tmp.iloc[:, w-1::w]  # Select columns every w-th one
+        df_tmp = df_tmp.iloc[:, w-1::w]  
         
         print(f"Rolling window {w}: Shape of DataFrame after rolling = {df_tmp.shape}")
         
